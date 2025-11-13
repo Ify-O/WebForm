@@ -8,97 +8,100 @@
 </head>
 <body>
   <form action="results.html" method="GET" enctype="multipart/form-data">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="username" required> 
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="please enter email" required>
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="90" step="1">
-    </div>
-    <div>
-      <label for="date">Date of Birth</label>
-      <input type="date" name="date" id="date">
-    </div>
-    <div>
-      <h4>Favorite Food</h4>
+    <fieldset>
+      <legend>Personal Information</legend>
       <div>
-        <label for="rice">Rice</label>
-        <input type="checkbox" name="rice" id="rice">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="username" required><br><br> 
       </div>
       <div>
-        <label for="beans">Beans</label>
-        <input type="checkbox" name="beans" id="beans">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="please enter email" required><br><br>
       </div>
       <div>
-        <label for="potatoes">Potatoes</label>
-        <input type="checkbox" name="potatoes" id="potatoes">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="90" step="1">
       </div>
       <div>
-        <label for="spaghetti">Spaghetti</label>
-        <input type="checkbox" name="spaghetti" id="spaghetti">
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="date">
       </div>
       <div>
-        <label for="other">Others</label>
-        <input type="text" name="others" id="others">
-      </div>
-      <div>
-        <h4>Gender</h4>
-        <label for="female"> Female</label>
-        <input type="radio" name="gender" id="female" value="female">
+        <p>Favorite Food</p>
+        <div>
+          <label for="rice">Rice</label>
+          <input type="checkbox" name="rice" id="rice">
+        </div>
+        <div>
+          <label for="beans">Beans</label>
+          <input type="checkbox" name="beans" id="beans">
+        </div>
+        <div>
+          <label for="potatoes">Potatoes</label>
+          <input type="checkbox" name="potatoes" id="potatoes">
+        </div>
+        <div>
+          <label for="spaghetti">Spaghetti</label>
+          <input type="checkbox" name="spaghetti" id="spaghetti">
+        </div>
+        <div>
+          <label for="other">Others</label>
+          <input type="text" name="others" id="others">
+        </div>
+        <div>
+          <p>Gender</p>
+          <label for="female"> Female</label>
+          <input type="radio" name="gender" id="female" value="female">
 
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
 
-        <label for="others">Others</label>
-        <input type="radio" name="gender" id="others">
+          <label for="others">Others</label>
+          <input type="radio" name="gender" id="others">
+        </div>
       </div>
-    </div>
-    <div>
-      <label for="eyecolour">Eye Colour</label>
-      <select name="eyecolour" id="eyecolour">
-        <option value="red">Red</option>
-        <option value="Green" label="Green"></option>
-        <option value="Black" label="Black"></option>
-        <option value="Brown" label="Brown"></option>
-        <option value="Blue" label="Blue"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <div>
-      <label for="file">Add Document</label>
-      <input id="file" name="file" type="file">
-    </div>
-    <div>
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">LinkedIn</label>
-      <input type="url" id="url" name="url">
-    </div>
-    <div>
-      <label for="colou">Color</label>
-      <input type="color" id="color" name="color">
-    </div>
-    <div>
-      <input type="hidden" name="hidden" value="Hello">
-    </div>
-    <div>
-      <label>Password</label>
-      <input type="password" name="Password" required>
-    </div>
-    <div>
-      <button type="reset">Reset</buttton>
-      <button type="submit">Submit</button>
-    </div>
+      <div>
+        <label for="eyecolour">Eye Colour</label>
+        <select name="eyecolour" id="eyecolour">
+          <option value="red">Red</option>
+          <option value="Green" label="Green"></option>
+          <option value="Black" label="Black"></option>
+          <option value="Brown" label="Brown"></option>
+          <option value="Blue" label="Blue"></option>
+        </select>
+      </div>
+      <div>
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+      <div>
+        <label for="file">Add Document</label>
+        <input id="file" name="file" type="file">
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+      <div>
+        <label for="url">LinkedIn</label>
+        <input type="url" id="url" name="url">
+      </div>
+      <div>
+        <label for="colou">Color</label>
+        <input type="color" id="color" name="color">
+      </div>
+      <div>
+        <input type="hidden" name="hidden" value="Hello">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="Password" required>
+      </div>
+      <div>
+        <button type="reset">Reset</buttton>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
   </form>
 </body>
 </html>
