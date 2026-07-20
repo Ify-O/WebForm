@@ -1,6 +1,6 @@
 # Web Forms
 
-![Web Form Preview](./form-preview.png)
+![Web Form Preview](/form-preview.png)
 
 ## Overview
 
