@@ -1,0 +1,320 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    color:#333;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    max-width:700px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.form-card{
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1{
+    text-align:center;
+    color:#6a11cb;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:14px;
+
+    border:2px solid #ddd;
+    border-radius:8px;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:#6a11cb;
+
+    box-shadow:0 0 8px rgba(106,17,203,.3);
+
+}
+
+/* ===========================
+   CHECKBOXES & RADIOS
+=========================== */
+
+.checkbox-group,
+.radio-group{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
+.checkbox-group label,
+.radio-group label{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-weight:normal;
+
+}
+
+.checkbox-group input,
+.radio-group input{
+
+    width:auto;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.button-group{
+
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+
+}
+
+button{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.submit-btn{
+
+    background:#6a11cb;
+
+    color:white;
+
+}
+
+.submit-btn:hover{
+
+    background:#5310a1;
+
+    transform:translateY(-2px);
+
+}
+
+.reset-btn{
+
+    background:#ddd;
+
+}
+
+.reset-btn:hover{
+
+    background:#bbb;
+
+}
+
+/* ===========================
+   SMALL TEXT
+=========================== */
+
+small{
+
+    margin-top:5px;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+   PASSWORD STRENGTH
+=========================== */
+
+.password-strength{
+
+    margin-top:8px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   CHARACTER COUNTER
+=========================== */
+
+.character-counter{
+
+    text-align:right;
+
+    color:#666;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   FILE NAME
+=========================== */
+
+#fileName{
+
+    color:#6a11cb;
+
+    font-style:italic;
+
+    margin-top:8px;
+
+}
+
+/* ===========================
+   COLOR PICKER
+=========================== */
+
+input[type="color"]{
+
+    padding:5px;
+
+    height:55px;
+
+}
+
+/* ===========================
+   PLACEHOLDER
+=========================== */
+
+::placeholder{
+
+    color:#999;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.form-card{
+
+    padding:25px;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.checkbox-group,
+.radio-group{
+
+    flex-direction:column;
+
+}
+
+}
